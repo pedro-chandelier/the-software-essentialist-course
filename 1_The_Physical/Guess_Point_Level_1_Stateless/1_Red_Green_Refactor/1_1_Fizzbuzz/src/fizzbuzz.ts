@@ -3,6 +3,7 @@ export function fizzBuzz(n: number): string {
     throw new Error("Only 1 to 100 is allowed")
   }
 
+  if (n % 3 === 0 && n % 5 === 0) return "FizzBuzz"
   if (n % 3 === 0) return "Fizz"
   if (n % 5 === 0) return "Buzz"
 
