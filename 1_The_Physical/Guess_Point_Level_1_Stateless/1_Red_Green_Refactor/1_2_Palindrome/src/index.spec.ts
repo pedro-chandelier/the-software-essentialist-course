@@ -8,6 +8,12 @@ describe('palindrome checker', () => {
 
         it("returns true for same case text palindromes", () => {
             expect(palindrome("wow")).toBeTruthy()
+            expect(palindrome("bill")).toBeFalsy()
+        })
+
+        it("returns true for different case text palindromes", () => {
+            expect(palindrome("woW")).toBeTruthy()
+            expect(palindrome("bilL")).toBeFalsy()
         })
     });
 })
