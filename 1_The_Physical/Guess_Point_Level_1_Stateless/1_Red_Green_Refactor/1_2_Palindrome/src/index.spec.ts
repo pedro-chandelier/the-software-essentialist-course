@@ -15,5 +15,11 @@ describe('palindrome checker', () => {
             expect(palindrome("woW")).toBeTruthy()
             expect(palindrome("bilL")).toBeFalsy()
         })
+
+        it("returns true for palindromes at phrase level", () => {
+            expect(palindrome("Was It A Rat I Saw")).toBeTruthy()
+            expect(palindrome("Never Odd or Even")).toBeTruthy()
+            expect(palindrome("thiS is NOT a pHrase PalindromE")).toBeFalsy()
+        })
     });
 })
